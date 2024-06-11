@@ -238,6 +238,8 @@ $$\frac{1}{\tau}(F^{n+1}-F^n)+L(\theta F^{n+1} - (1-\theta) F^n)=0$$
 
 当$\theta$<1/2时，能量增长：$‖F^n+1‖^2>‖F^n‖^2$，不稳定
 
+\newpage
+
 \section{大气海洋方程及其守恒性}
 \subsection{正压浅水方程组}
 球面下的标准形式正压浅水方程组
@@ -264,6 +266,8 @@ $$\begin{cases}
 \subsubsection{能量守恒}
 \subsubsection{位涡拟能守恒}
 
+\newpage
+
 \section{有限差分方法和平流方案}
 \subsection{有限差分格式}
 由差商近似微商，可以通过Taylor展开法构造基本的差分格式，也可以通过待定系数法以更加系统地构造差分格式。
@@ -283,17 +287,17 @@ $$LF = S$$
 $$\mathbf{L}F_i^n = S_i^n$$
 
 其中L为差分算子，由于误差的存在，$(S)_i^n$不可能等于$S_i^n$。因此，我们定义两者的差：
-$$R_i^n = \mathbf{L}F_i^n-(\mathbf{L}F)_i^n$$
+$$R_i^n = \mathbf{L}F_i^n-(LF)_i^n$$
 
 为截断误差，即数值解和真解在一次差分上的误差。因此，式中的$F_i^n=(F)_i^n$为微分方程的充分光滑解。
 
 2. 差分格式的相容性
 
-对于差分格式截断误差：$$R_i^n = \mathbf{L}F_i^n-(\mathbf{L}F)_i^n$$
+对于差分格式截断误差：$$R_i^n = \mathbf{L}F_i^n-(LF)_i^n$$
 
 以及右端项阶段误差：$$r_i^n =  S_i^n-(S)_i^n$$
 
-当$\Delta x, \Delta t \longrightarrow 0$时，有$R_i^n\longrightarrow0$，即$\mathbf{L}F_i^n\longrightarrow(\mathbf{L}F)_i^n$，则差分算子$\mathbf{L}$是微分算子L的相容逼近。若此时，也有$r_i^n\longrightarrow0$则称差分格式和微分方程是相容的。
+当$\Delta x, \Delta t \longrightarrow 0$时，有$R_i^n\longrightarrow0$，即$\mathbf{L}F_i^n\longrightarrow(LF)_i^n$，则差分算子$\mathbf{L}$是微分算子L的相容逼近。若此时，也有$r_i^n\longrightarrow0$则称差分格式和微分方程是相容的。
 
 如果$R_i^n=O(\Delta x^p + \Delta t^q)$，则称差分格式具有p阶空间精度，q阶时间精度。
 
@@ -574,6 +578,7 @@ Semi-Lagrange方案主要解决欧拉方案存在的严格时间步长的限制�
 
 混淆误差：流场的巨大形变性使得难以描述微团的形状，极大影响数值计算精度。离散微团所代表的空间范围没有模拟好，产生混淆误差。
 
+\newpage
 \section{垂直坐标}
 高度z坐标：
 
@@ -697,9 +702,16 @@ H是海底地形的深度，$\eta$是海表抬升高度，量纲为1。
 
 误差扣除法，误差增量表达式控制法，粘性系数订正法，网格调整法
 
-
+\newpage
 \section{分裂算法}
-
+\subsection{分裂算法基础}
+\subsubsection{计算时效性问题}
+\subsubsection{快慢过程的相对可分性}
+\subsection{守恒分裂模型}
+\subsection{经济分裂模型}
+\subsection{预估矫正模型}
+\subsection{其他守恒分裂模型}
+\newpage
 \section{资料同化方法}
 分析资料是日常数值天气预报业务中采用当前的同化系统和预报模式实时同化当前所能获取的多源观测资料而产生的大气或海洋当前状况的最优估计，用作模式初值；
 
