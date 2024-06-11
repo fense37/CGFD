@@ -34,7 +34,7 @@
 把若干确定的有区别的（不论是具体的或抽象的）事物合并起来，看作一个整体，就称为一个集合，其中各事物称为该集合的元素（Cantor, 1873年12月7日）;
 
 \subsubsection{线性空间}
-对于一个给定的集合A，$\forall a,b\in A, \beta\in R$， 如果$a\oplus b\in A，a\otimes\in A$，则集合A就被称之为一个线性空间；
+对于一个给定的集合A，$\forall a,b\in A, \beta\in R$， 如果$a\oplus b\in A, a\otimes\in A$，则集合A就被称之为一个线性空间；
 
 线性空间不同于集合的地方是它涉及到了两个运算，即加法和数乘运算；这两个运算可以是通常意义下的加法和数乘，也可以是自己定义的加法和数乘。
 
@@ -48,7 +48,7 @@
 
 数乘运算需要满足：
 
-数乘结合律：$(a \otimes \beta ) \otimes \gamma= a \otimes (\beta \times \gamma)；$
+数乘结合律：$(a \otimes \beta ) \otimes \gamma= a \otimes (\beta \times \gamma)$；
 
 与实数1的数乘：$a \otimes 1= a$ ；
 
@@ -62,13 +62,13 @@
 设W是V的线性子空间，且W为 V的真子集，则W为V的真子空间，记为$W\subset V$。
 
 \subsubsection{范数}
-设X为一个线性空间。∀x∈X，都有一个被记作‖x‖的实数与它对应，且满足：
+设X为一个线性空间。$\forall x \in X$，都有一个被记作‖x‖的实数与它对应，且满足：
 
-$‖x‖\ge 0，且‖x‖=0 \leftrightarrow x=0 $(零元素)；
+$‖x‖\ge 0, ‖x‖=0 \leftrightarrow x=0 $(零元素)；
 
-$\forall x\in X, \alpha\in R， ‖\alpha x‖=|\alpha|‖x‖$；
+$\forall x\in X, \alpha\in R,  ‖\alpha x‖=|\alpha|‖x‖$；
 
-$\forall x,y\in X，‖x+y‖\le‖x‖+‖y‖$ (三角不等式)；
+$\forall x,y\in X, ‖x+y‖\le‖x‖+‖y‖$ (三角不等式)；
 
 \subsubsection{线性赋范空间}
 定义了范数的线性空间称为线性赋范空间或简称赋范空间。
@@ -112,7 +112,7 @@ $\forall x,y\in X，‖x+y‖\le‖x‖+‖y‖$ (三角不等式)；
 2. $f(\alpha x)=\alpha f(x)$
 
 \subsubsection{伴随算子}
-设$M_1,M_2\subset X$， X为Hilbert空间， A为$M_1$到$M_2$的一个线性算子，若$\forall u\\in M_1,v\in M_2$，存在$M_2$到$M_1$的线性算子$A^∗$，使得对配备在X上的内积(∙,∙)，满足：$(Au,v)=(u,A^∗v)$，则称$A^∗$是A的伴随（共轭）算子，当A为实数矩阵时，其伴随也记为$A^T$
+设$M_1,M_2\subset X$， X为Hilbert空间， A为$M_1$到$M_2$的一个线性算子，若$\forall u \in M_1,v\in M_2$，存在$M_2$到$M_1$的线性算子$A^∗$，使得对配备在X上的内积$(\cdot,\cdot)$，满足：$(Au,v)=(u,A^∗v)$，则称$A^∗$是A的伴随（共轭）算子，当A为实数矩阵时，其伴随也记为$A^T$
 
 \subsubsection{对称算子和反对称算子}
 设$A^∗$是A的伴随（共轭）算子，若$A^∗=A$，则称A为对称算子，或自伴随（自共轭）算子；
@@ -247,8 +247,11 @@ $$\begin{cases}
 &{\partial_{t}\phi + \frac{1}{acos\varphi}\left( {\partial_{\lambda}\left( {u\phi} \right) + \partial_{\varphi}\left( {v\phi cos\phi} \right)} \right) = 0}
 \end{cases} $$
 
-其中$f^{*} = f + \frac{u}{a}tan\varphi$，我们引入动能项$K = \frac{1}{2}\left( u^{2} + v^{2} \right)$，和涡度项$\xi = \frac{1}{acos\varphi}\left( {\partial_{\lambda}v - \partial_{\varphi}\left( {ucos\varphi} \right)} \right)$，得到矢量不变形式的正压浅水方程组：
-$$\{ \begin{cases}
+其中$f^{*} = f + \frac{u}{a}tan\varphi$，
+我们引入动能项$K = \frac{1}{2}\left( u^{2} + v^{2} \right)$，
+和涡度项$\xi = \frac{1}{acos\varphi}\left( {\partial_{\lambda}v - \partial_{\varphi}\left( {ucos\varphi} \right)} \right)$，
+得到矢量不变形式的正压浅水方程组：
+$$\begin{cases}
 {\partial_{t}u + \frac{1}{acos\varphi}\partial_{\lambda}K + \frac{1}{acos\varphi}\partial_{\lambda}\phi - \left( {f + \xi} \right)v= 0} \\
 {\partial_{t}v + \frac{1}{a}\partial_{\varphi}K + \frac{1}{a}\partial_{\varphi}\phi + \left( {f + \xi} \right)u = 0} \\
 {\partial_{t}\phi + \frac{1}{acos\varphi}\left( {\partial_{\lambda}\left( {u\phi} \right) + \partial_{\varphi}\left( {v\phi cos\phi} \right)} \right)= 0}
@@ -357,12 +360,12 @@ Lax等价定理：
 
 3. 得到增长因子或增长矩阵（多变量情况），$U_{k+1} = GU_{k}$
 
-线性方程的差分格式稳定的充分必要条件是存在常数M，使得当$\Delta t\le τ，n\Delta t\le T$时，对所有的$k\in R$，有：
+线性方程的差分格式稳定的充分必要条件是存在常数M，使得当$\Delta t\le \tau, n\Delta t\le T$时，对所有的$k\in R$，有：
 $$‖G(k)^n‖\le1+M\Delta t$$
 
 Von Neumann条件：
 
-线性差分格式稳定的必要条件是存在常数$\tau$、M，使得当$\Delta t\le \tau，n\Delta t\le T$时，对所有的$k\in R$，有:
+线性差分格式稳定的必要条件是存在常数$\tau$、M，使得当$\Delta t\le \tau, n\Delta t\le T$时，对所有的$k\in R$，有:
 $$‖\lambda_j(G(k))‖\le1+M\Delta t$$
 
 该条件称为Von Neumann条件，其重要性在于，很多情况下，这个条件也是稳定性的充分条件。
@@ -591,7 +594,7 @@ Semi-Lagrange方案主要解决欧拉方案存在的严格时间步长的限制�
 \subsection{物理量坐标}
 均与地形相交，形成复杂的下边界，较难用于模式计算
 \subsubsection{气压p坐标}
-使用气压p作为垂直坐标（Surcliffe，1947）。以静力平衡为前提条件：$\partial p/\partial z=−ρg$
+使用气压p作为垂直坐标（Surcliffe，1947）。以静力平衡为前提条件：$\partial p/\partial z=−\rho g$
 
 气压p坐标的优点：
 \begin{itemize}
@@ -810,7 +813,7 @@ $$R=\overline{(\varepsilon_o-\overline{\varepsilon_o})(\varepsilon_o-\overline{\
 
 3、对背景误差协方差更大的分析格点，观测资料将获得更大的权重，对分析产生更大的影响。  
 
-4、OI比逐步订正法更合理，但代价是要求解一个PP阶的逆矩阵或P阶线性方程组（P为观测个数）
+4、OI比逐步订正法更合理，但代价是要求解一个PxP阶的逆矩阵或P阶线性方程组（P为观测个数）
 
 5、进行大尺度流场分析时，若在背景误差协方差引入地转关系，可避免独立估计风场的误差相关，强制保持风场和位势场分析增量的近似地转，改进其平衡关系。
 
@@ -932,7 +935,7 @@ $$J(\delta x) = \frac{1}{2}(\delta x)^{T}B^{-1}(\delta x) + \frac{1}{2}\Sigma_i(
 \begin{table}[h!]
   \begin{center}
     \caption{三种同化方式的比较}
-    \begin{tabular}{l|c|r|r} 
+    \begin{tabular}{c|c|c|c} 
       \textbf{指标} & \textbf{3DVar/OI} & \textbf{4DVar} & \textbf{EnKF}\\
       \hline
       B矩阵 & 模型化，不随流发展 & 模型化，窗口内隐式流依赖 & 非模型化，全局显式流依赖 \\
